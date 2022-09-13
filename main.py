@@ -4,8 +4,21 @@ def on_button_pressed_a():
         hungry = False
         sleepy = False
         unhappy_timer = 100
+        basic.show_leds("""
+            . . . . .
+                        . . . . #
+                        . . . # .
+                        # . # . .
+                        . # . . .
+        """)
     else:
-        pass
+        basic.show_leds("""
+            # . . . #
+                        . # . # .
+                        . . # . .
+                        . # . # .
+                        # . . . #
+        """)
 input.on_button_pressed(Button.A, on_button_pressed_a)
 
 def on_button_pressed_b():
@@ -14,8 +27,21 @@ def on_button_pressed_b():
         hungry2 = False
         sleepy2 = False
         unhappy_timer2 = 100
+        basic.show_leds("""
+            . . . . .
+                        . . . . #
+                        . . . # .
+                        # . # . .
+                        . # . . .
+        """)
     else:
-        pass
+        basic.show_leds("""
+            # . . . #
+                        . # . # .
+                        . . # . .
+                        . # . # .
+                        # . . . #
+        """)
 input.on_button_pressed(Button.B, on_button_pressed_b)
 
 dead = False
